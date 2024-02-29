@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Dentist</title>
+    <link rel="stylesheet" href="teeth.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ef48d6ff4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar head navbar-expand-lg">
+        <div class="container-fluid ">
+            <a class="navbar-brand fs-6 px-4" style="color: gray;" href="#"><i class="fa-solid fa-location-dot fa-lg"
+                    style="color: #74C0FC;"></i>99 Porto St, Los Angeles, CA 10000</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto ;">
+                    <a class="nav-link active" style="color: gray;" aria-current="page" href="mailto:mail@domain.com"><i
+                            class="fa-regular fa-envelope fa-lg" style="color: #74C0FC;"></i> mail@domain.com</a>
+                    <a class="nav-link" style="color: gray;" href="#"><i class="fa-regular fa-clock fa-lg"
+                            style="color: #74C0FC;"></i>Mon - Sat 9:00am
+                        - 6:00pm / Sunday - CLOSED</a>
+                    <a class="nav-link" style="color: gray;" href="tel:123-456-7890"><i class="fa-solid fa-phone fa-lg"
+                            style="color: #74C0FC;"></i>123-456-7890</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <nav id=nav class="navbar navbar-expand-lg bg-bs-tertiary " style="height: 80px;">
+        <div class="container-fluid ">
+            <a href="#"><img src="logo.png" width="123" height="32" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dental Exams</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dental Cleaning</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Tooth Extraction</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Root Canal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Element</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-5 m-3 text-center" style="background-color:#ebedf7;">
+        <div class="row">
+            <div class="col">
+                <span class="h2 p-5 m-5" ;> <strong> About</strong> </span>
+            </div>
+            <div class="col me-5">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" style="text-align: end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="home.html" style="color: black;">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">about</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="border-0">
+        <div class="container p-5 ">
+            <div class="row allign">
+                <div class="col-sm-6 col-md-6 col-lg-6  text-center">
+                    <img src="generic-5.jpg" height="300px" alt="">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 " style="animation-delay: 250ms;">
+                    <h5 class="head" data-aos="fade-up" data-aos-delay="250" style="color: #3D4EAF;">ABOUT US</h2>
+                        <h6 class="display-6 " data-aos="fade-up" data-aos-delay="250" style="font-weight: bolder;">
+                            Welcome To Porto
+                            Dentist Downtown Los Angeles</h6>
+                        <p class="h6 text-secondary py-4 " data-aos="fade-up" data-aos-delay="250"
+                            style="line-height: 30px;">Cras a
+                            elit sit amet leo
+                            accumsan volutpat. Suspendisse hendreriast ehicula
+                            leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. Suspendisse
+                            hendrerit
+                            vehicula leo, vel efficitur fel.</p>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6 " data-aos="fade-up" data-aos-delay="250">
+                                <p class="display-6" style="font-weight:bold;">10000+ <br>
+                                <h3>satisfied person</h3>
+                                </p>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6 " data-aos="fade-up" data-aos-delay="250">
+                                <p class="h5 text-secondary">Cras a elit sit amet leo accumsan volutpat. Suspendisse.
+                                </p>
+                            </div>
+                            <div class="col" data-aos="fade-up" data-aos-delay="250">
+                                <button type="button" class="btn btn btn-lg text-light"
+                                    style="border-radius: 0%; background-color: #36459B ; ">Book Appointment</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container px-5">
+        <p class="text-secondary h5 p-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum eleifend eros a pharetra. Cras aliquam
+            vestibulum vehicula. Sed sed lectus risus.
+        </p>
+        <p class="h6 p-3" style="color:rgb(83, 81, 81);">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum eleifend eros a pharetra. Cras aliquam
+            vestibulum vehicula. Sed sed lectus risus. Vestibulum maximus ac purus in euismod. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Sed dictum eleifend eros a pharetra. Cras aliquam vestibulum vehicula.
+            Sed sed lectus risus. Vestibulum maximus ac purus in euismod.
+        </p>
+        <div class="row row-cols-1 row-cols-md-4 py-4">
+            <div class="col" style="height: 150px;">
+                <div class="card">
+                    <img src="service-1.jpg" class="card-img-top"  alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="service-2.jpg" class="card-img-top"  alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="service-3.jpg" class="card-img-top"  alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="service-4.jpg" class="card-img-top"  alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-5 text-center d-grid gap-5">
+        <div class="col">
+            <p class="h5  " style="color: #36459B;">PORTO DENTISTS </p>
+            <p class="h2 ">Meet Our Dentists </p>
+            <p class="h5 " style="color: gray;">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast
+                ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. Suspendisse
+                hendrerit
+                vehicula leo, vel efficitur fel. </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 py-4">
+            <div class="col">
+                <div class="card">
+                    <img src="team-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text"> Dentist owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="team-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jamice Doe</h5>
+                        <p class="card-text">Assostiate Dentist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="team-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Peter Philips</h5>
+                        <p class="card-text">Dental Hygenist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="border-0 mt-0">
+        <div class="container pt-5">
+          <div class="row text-center text-lg-start font-weight-semi-bold text-color-light text-4 py-3">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <i class="icon-location-pin icons text-color-tertiary text-6 p-relative top-6 me-1"></i> 99 Porto St, Los
+              Angeles, CA 10000
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <span class="d-block d-lg-inline-block mb-3 mb-lg-0 me-lg-4">
+                <i class="icon-envelope icons text-color-tertiary text-6 p-relative top-7 me-1"></i> <a
+                  href="mailto:mail@domain.com"
+                  class="text-color-light text-color-hover-tertiary text-decoration-none">mail@domain.com</a>
+              </span>
+              <span class="d-block d-lg-inline-block">
+                <i class="icon-phone icons text-color-tertiary text-6 p-relative top-7 me-1"></i> <a href="tel:123-456-7890"
+                  class="text-color-light text-color-hover-tertiary text-decoration-none">123-456-7890</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="container pb-5 text-light">
+          <div class="row text-center text-md-start py-4 my-5">
+            <div class="col-md-6 col-lg-3 align-self-center text-center text-md-start text-lg-center mb-5 mb-lg-0">
+              <a href="#" class="text-decoration-none">
+                <img src="img/demos/auto-services/logo-light.png" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+              <h5 class=" font-weight-bold text-color-light text-4-5 mb-4">About Us</h5>
+              <ul class="list list-unstyled">
+                <li class="pb-1 mb-2">
+                  <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5">ADDRESS</span>
+                  <a href="#" class="text-color-light font-weight-medium text-3-5">GET DIRECTIONS</a>
+                </li>
+                <li class="pb-1 mb-2">
+                  <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5 mb-1">PHONE</span>
+                  <ul class="list list-unstyled font-weight-light text-3-5 mb-0">
+                    <li class="text-color-light line-height-3 mb-0">
+                      Emergency: <a href="tel:+1234567890"
+                        class=" text-color-light text-color-hover-default">+123 4567 890</a>
+                    </li>
+                    <li class="text-color-light line-height-3 mb-0">
+                      Appointments: <a href="tel:+1234567890"
+                        class=" text-color-light text-color-hover-default">+123 4567 890</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-1 mb-2">
+                  <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5">EMAIL</span>
+                  <a href="mailto:mail@example.com"
+                    class=" font-weight-light text-3-5 text-color-light">mail@example.com</a>
+                </li>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="col-md-6 col-lg-2 mb-5 mb-md-0">
+              <h5 class=" font-weight-bold text-color-light text-4-5 mb-4">Our Services</h5>
+              <ul class="list  mb-0">
+                <li class="mb-0"><a href="">Dental Exams</a></li>
+                <li class="mb-0"><a href="">Dental Cleaning</a></li>
+                <li class="mb-0"><a href="">Tooth Extraction</a></li>
+                <li class="mb-0"><a href="">Root Canal</a></li>
+                <li class="mb-0"><a href="">Clear Braces</a></li>
+                <li class="mb-0"><a href="">Teeth Whitening</a></li>
+                <li class="mb-0"><a href="">Oral Surgery</a></li>
+                <li class="mb-0"><a href="">Dental Implants</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 offset-lg-1">
+              <h5 class="" font-weight-bold text-color-light text-4-5 mb-4">Opening Hours</h5>
+              <ul class="list  list-inline mb-0">
+                <li>Mon - Fri: 8:30 am to 5:00 pm</li>
+                <li>Saturday: 9:30 am to 1:00 pm</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="text-center text-color-light  text-3 mb-0">Porto Dentist © 2024. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

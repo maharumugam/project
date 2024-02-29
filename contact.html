@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Dentist</title>
+    <link rel="stylesheet" href="teeth.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ef48d6ff4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar head navbar-expand-lg">
+        <div class="container-fluid ">
+            <a class="navbar-brand fs-6 px-4" style="color: gray;" href="#"><i class="fa-solid fa-location-dot fa-lg"
+                    style="color: #74C0FC;"></i>99 Porto St, Los Angeles, CA 10000</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto ;">
+                    <a class="nav-link active" style="color: gray;" aria-current="page" href="mailto:mail@domain.com"><i
+                            class="fa-regular fa-envelope fa-lg" style="color: #74C0FC;"></i> mail@domain.com</a>
+                    <a class="nav-link" style="color: gray;" href="#"><i class="fa-regular fa-clock fa-lg"
+                            style="color: #74C0FC;"></i>Mon - Sat 9:00am
+                        - 6:00pm / Sunday - CLOSED</a>
+                    <a class="nav-link" style="color: gray;" href="tel:123-456-7890"><i class="fa-solid fa-phone fa-lg"
+                            style="color: #74C0FC;"></i>123-456-7890</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <nav id=nav class="navbar navbar-expand-lg bg-bs-tertiary " style="height: 80px;">
+        <div class="container-fluid ">
+            <a href="#"><img src="logo.png" width="123" height="32" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dental Exams</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dental Cleaning</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Tooth Extraction</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Root Canal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Element</a>
+                    </li>
+                </ul>
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-5 m-3 ext-center " style="background-color:#ebedf7;">
+        <div class="row">
+            <div class="col">
+                <span class="h2 p-5 m-5" ;> <strong> Contact</strong> </span>
+            </div>
+            <div class="col me-5">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" style="text-align: end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="dental.html" style="color: black;">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container p-5 d-flex  text-center">
+        <div class="row">
+            <div class="col py-4">
+                <div class="featured-boxes featured-boxes-style-9">
+                    <div class="row">
+                        <div class="col-lg-4 px-lg-3  ">
+                            <div class="box-content">
+                                <span class="icon-featured icon-featured-lg">
+                                    <div class="animated-iconsvg-fill-color-tertiary mt-1 "><svg viewBox="0 0 512 512"
+                                            xmlns="http://www.w3.org/2000/svg" id="icon_111708054304249"
+                                            data-filename="icon-1.svg" height="100">
+                                            <title></title>
+                                            <g data-name="1" id="_1">
+                                                <path
+                                                    d="M262.12,378a15,15,0,0,1-7.33-1.91A230.8,230.8,0,0,1,136.68,174.88q0-2.5.06-5c.8-37.5,14.81-69.11,40.52-91.4C199.91,58.82,230.05,48,262.12,48S324.32,58.82,347,78.47c25.71,22.29,39.72,53.9,40.52,91.4h0q.06,2.5.06,5A230.8,230.8,0,0,1,269.44,376.09,15,15,0,0,1,262.12,378Zm0-300c-24.85,0-48,8.21-65.21,23.13-19.13,16.59-29.57,40.58-30.18,69.38,0,1.45,0,2.91,0,4.37a200.76,200.76,0,0,0,95.44,170.73,200.75,200.75,0,0,0,95.43-170.73c0-1.46,0-2.92-.05-4.37h0c-.61-28.8-11.05-52.79-30.18-69.38C310.12,86.21,287,78,262.12,78Z">
+                                                </path>
+                                                <path
+                                                    d="M262.43,247.4a72.13,72.13,0,1,1,72.13-72.13A72.21,72.21,0,0,1,262.43,247.4Zm0-114.25a42.13,42.13,0,1,0,42.13,42.12A42.17,42.17,0,0,0,262.43,133.15Z">
+                                                </path>
+                                                <path
+                                                    d="M262.12,450c-40.47,0-78.75-8.06-107.79-22.69C122,411,104.23,388.19,104.23,363c0-33.41,31.25-62.26,83.6-77.16A15,15,0,0,1,196,314.7c-37.55,10.69-61.81,29.65-61.81,48.3,0,27,52.52,57,127.89,57S390,390,390,363c0-18.65-24.26-37.61-61.81-48.3a15,15,0,0,1,8.21-28.86C388.75,300.74,420,329.59,420,363c0,25.19-17.79,48-50.1,64.31C340.86,441.94,302.58,450,262.12,450Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </span>
+                                <h4 class="title h2 text-center " style="font-weight: bold;">Convenient Location</h4>
+                                <p class="body h5 text-secondary text-center  " style="font-weight: bold;">Lorem ipsum
+                                    dolor sit amet,
+                                    consec tetur adipiscing el nc viverra
+                                    erat orcias ac auctor.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-lg-3 ">
+                            <div class="box-content">
+                                <span class="icon-featured icon-featured-lg">
+                                    <div class="animated-icon svg-fill-color-tertiary mt-1"><svg viewBox="0 0 512 512"
+                                            xmlns="http://www.w3.org/2000/svg" id="icon_191708054304251"
+                                            data-filename="icon-2.svg" height="100">
+                                            <title></title>
+                                            <g data-name="1" id="_1">
+                                                <path
+                                                    d="M157.14,331.32a82.24,82.24,0,1,1,58.17-24.06A82,82,0,0,1,157.14,331.32Zm0-134.49a52.26,52.26,0,1,0,37,15.29A52.13,52.13,0,0,0,157.14,196.83Z">
+                                                </path>
+                                                <path
+                                                    d="M363,212.72A82.28,82.28,0,1,1,421.16,72.27h0A82.28,82.28,0,0,1,363,212.72Zm0-134.55a52.28,52.28,0,1,0,37,15.31A51.94,51.94,0,0,0,363,78.17Z">
+                                                </path>
+                                                <path
+                                                    d="M363,450a82.28,82.28,0,1,1,82.28-82.27A82.37,82.37,0,0,1,363,450Zm0-134.55a52.28,52.28,0,1,0,52.28,52.28A52.33,52.33,0,0,0,363,315.45Z">
+                                                </path>
+                                                <path
+                                                    d="M215.45,230.49a15,15,0,0,1-7.51-28l89.25-51.44a15,15,0,0,1,15,26l-89.25,51.44A15,15,0,0,1,215.45,230.49Z">
+                                                </path>
+                                                <path
+                                                    d="M304.68,349.13a15,15,0,0,1-7.48-2l-89.26-51.44a15,15,0,0,1,15-26l89.25,51.44a15,15,0,0,1-7.5,28Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </span>
+                                <h4 class="title h2 text-center " style="font-weight: bold;">Full-Service</h4>
+                                <p class="body h5 text-secondary text-center " style="font-weight: bold;">Lorem ipsum
+                                    dolor sit amet,
+                                    con sectetur adipiscing el nc viverra
+                                    eratorci ac auctor.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-lg-3 ">
+                            <div class="box-content">
+                                <span class="icon-featured icon-featured-lg">
+                                    <div class="animated-icon svg-fill-color-tertiary mt-1"><svg viewBox="0 0 512 512"
+                                            xmlns="http://www.w3.org/2000/svg" id="icon_191708054304236"
+                                            data-filename="icon-3.svg" height="100">
+                                            <title></title>
+                                            <g data-name="1" id="_1">
+                                                <path
+                                                    d="M370.24,425.59a14.89,14.89,0,0,1-7-1.72L257,368,150.74,423.87A15,15,0,0,1,129,408.06l20.3-118.32-86-83.8a15,15,0,0,1,8.31-25.59l118.81-17.26L243.55,55.43a15,15,0,0,1,26.9,0l53.13,107.66,118.8,17.26a15,15,0,0,1,8.32,25.59l-86,83.8L385,408.06a15,15,0,0,1-14.78,17.53ZM106,205.67l69.85,68.09A15,15,0,0,1,180.17,287l-16.49,96.14L250,337.78a15,15,0,0,1,14,0l86.34,45.39L333.83,287a15,15,0,0,1,4.31-13.27L408,205.67l-96.53-14a15,15,0,0,1-11.29-8.2L257,96l-43.17,87.47a15,15,0,0,1-11.3,8.2Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </span>
+                                <h4 class="title h2 text-center " style="font-weight: bold;">Top Rated Dentists</h4>
+                                <p class="body h5 text-secondary text-center " style="font-weight: bold;">Lorem ipsum
+                                    dolor sit amet,
+                                    consec tetur adipiscing el nc viverra
+                                    eratorciac auctor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-5 ">
+        <div class="row">
+            <div class="col">
+                <p class="h5 p-3"> <svg xmlns=" http://www.w3.org/2000/svg" width="16" height="16" fill="lightblue"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>99 Porto St, Los Angeles, CA 10000</p>
+                <p class="h5 p-3"><a href="mailto:mail@domain.com" style="text-decoration: aliceblue;color:black;">
+
+                        <i class="fa-regular fa-envelope fa-lg" style="color: #74C0FC; "></i>
+                        mail@domain.com</a></p>
+
+            </div>
+            <div class="col">
+                <p class="h5 p-3" style="color:black ;"><i class="fa-regular fa-clock fa-lg"
+                        style="color: #74C0FC;"></i>Mon - Sat9:00am-6:00pm/Sunday-CLOSED
+                </p>
+                <p class="h5 p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#04a3c1"
+                        class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>123-456-7890
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="form text-center" data-aos="fade-up" data-aos-delay="250">
+        <div class="head p-3 " data-aos="fade-up" data-aos-delay="250" style="color: #3D4EAF;">BOOK ONLINE</div>
+        <div class="h1" data-aos="fade-up" data-aos-delay="250">Request an Appointment </div>
+        <div class="h6 p-3 m-2" data-aos="fade-up" data-aos-delay="250">
+          Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non.
+        </div>
+        <div class="container d-flex justify-content-center" data-aos="fade-up" data-aos-delay="250">
+          <div class="row p-3">
+            <div class="col-sm-12 col-xl-6">
+              <input type="text" style="background-color: whitesmoke;" class="form-control text-secondary p-3 m-2"
+                id="exampleFormControlInput1" placeholder="Your name " required>
+            </div>
+            <div class="col-sm-12 col-xl-6">
+              <input type="tel" style="background-color: whitesmoke;" class="form-control p-3 m-2"
+                id="exampleFormControlInput1" placeholder="Phone number" required>
+            </div>
+            <div class="col-sm-12 col-xl-6">
+              <input type="email" style="background-color: whitesmoke;" class="form-control p-3 m-2"
+                id="exampleFormControlInput1" placeholder="Email-Address" required>
+            </div>
+            <div class="col-sm-12 col-xl-6">
+              <input type="" style="background-color: whitesmoke;" class="form-control text-secondary p-3 m-2"
+                id="exampleFormControlInput1" placeholder="Service" required>
+            </div>
+            <div class="col-sm-12 col-xl-12">
+              <textarea class="form-control text-secondary m-3 " style="background-color: whitesmoke;"
+                id="exampleFormControlTextarea1" rows="8" placeholder="details">details</textarea>
+            </div>
+          </div>
+    
+        </div>
+        <div style="padding-left: 900px;">
+          <button type="button" class="btn btn-primary btn-lg my-3"
+            style="border-radius: 0%; background-color: #36459B; ">Book
+            Submit</button>
+        </div>
+      </div>
+      <footer id="footer" class="border-0 mt-0">
+        <div class="container pt-5">
+          <div class="row text-center text-lg-start font-weight-semi-bold text-color-light text-4 py-3">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <i class="icon-location-pin icons text-color-tertiary text-6 p-relative top-6 me-1"></i> 99 Porto St, Los
+              Angeles, CA 10000
+            </div>
+            <div class="col-lg-6 text-lg-end">
+              <span class="d-block d-lg-inline-block mb-3 mb-lg-0 me-lg-4">
+                <i class="icon-envelope icons text-color-tertiary text-6 p-relative top-7 me-1"></i> <a
+                  href="mailto:mail@domain.com"
+                  class="text-color-light text-color-hover-tertiary text-decoration-none">mail@domain.com</a>
+              </span>
+              <span class="d-block d-lg-inline-block">
+                <i class="icon-phone icons text-color-tertiary text-6 p-relative top-7 me-1"></i> <a href="tel:123-456-7890"
+                  class="text-color-light text-color-hover-tertiary text-decoration-none">123-456-7890</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="container pb-5 text-light">
+          <div class="row text-center text-md-start py-4 my-5">
+            <div class="col-md-6 col-lg-3 align-self-center text-center text-md-start text-lg-center mb-5 mb-lg-0">
+              <a href="#" class="text-decoration-none">
+                <img src="img/demos/auto-services/logo-light.png" class="img-fluid" alt="">
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+              <h5 class=" font-weight-bold text-color-light text-4-5 mb-4">About Us</h5>
+              <ul class="list list-unstyled">
+                <li class="pb-1 mb-2">
+                  <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5">ADDRESS</span>
+                  <a href="#" class="text-color-light font-weight-medium text-3-5">GET DIRECTIONS</a>
+                </li>
+                <li class="pb-1 mb-2">
+                  <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5 mb-1">PHONE</span>
+                  <ul class="list list-unstyled font-weight-light text-3-5 mb-0">
+                    <li class="text-color-light line-height-3 mb-0">
+                      Emergency: <a href="tel:+1234567890"
+                        class=" text-color-light text-color-hover-default">+123 4567 890</a>
+                    </li>
+                    <li class="text-color-light line-height-3 mb-0">
+                      Appointments: <a href="tel:+1234567890"
+                        class=" text-color-light text-color-hover-default">+123 4567 890</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-1 mb-2">
+                  <span class="d-block font-weight-semibold line-height-1 text-color-grey text-3-5">EMAIL</span>
+                  <a href="mailto:mail@example.com"
+                    class=" font-weight-light text-3-5 text-color-light">mail@example.com</a>
+                </li>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="col-md-6 col-lg-2 mb-5 mb-md-0">
+              <h5 class=" font-weight-bold text-color-light text-4-5 mb-4">Our Services</h5>
+              <ul class="list  mb-0">
+                <li class="mb-0"><a href="">Dental Exams</a></li>
+                <li class="mb-0"><a href="">Dental Cleaning</a></li>
+                <li class="mb-0"><a href="">Tooth Extraction</a></li>
+                <li class="mb-0"><a href="">Root Canal</a></li>
+                <li class="mb-0"><a href="">Clear Braces</a></li>
+                <li class="mb-0"><a href="">Teeth Whitening</a></li>
+                <li class="mb-0"><a href="">Oral Surgery</a></li>
+                <li class="mb-0"><a href="">Dental Implants</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 offset-lg-1">
+              <h5 class="" font-weight-bold text-color-light text-4-5 mb-4">Opening Hours</h5>
+              <ul class="list  list-inline mb-0">
+                <li>Mon - Fri: 8:30 am to 5:00 pm</li>
+                <li>Saturday: 9:30 am to 1:00 pm</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="text-center text-color-light  text-3 mb-0">Porto Dentist © 2024. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
